@@ -1,3 +1,4 @@
+
 // Question 1 
 
 function InstagramPost(handleOfAuthor, content, imageLInk, numberOfViews, numberOfLikes){
@@ -19,8 +20,10 @@ const InstagramPost3 = new InstagramPost("sophie ukazu", "dairy of mbaise girl",
 console.log(InstagramPost3);
 //---------------------------------------------------------------------------------------------------------------------
 
+
 // Question 3 
 // 3(a)
+// Define the createPerson() factory function
 function createPerson(name, age, location){
    return{ 
     name,
@@ -28,20 +31,25 @@ function createPerson(name, age, location){
     location,
    };
 }
-const musa= createPerson("musa dawodu", 19, "lekki, lagos-state");
+const musa = createPerson("musa dawodu", 19, "lekki, lagos-state");
 console.log(musa)
 
 // 3(b)
+// Define the createJambScores() factory function
+
 function createJambScores(english, govt, lit, crk){
     return{
-        english,   
-        govt,
-        lit,
-        crk,
+        english:english,   
+        govt:govt,
+        lit:lit,
+        crk:crk,
     };
 } 
-const jambScore = createJambScores(70, 85, 82, 94);
-console.log(jambScore);
+const jambScores = createJambScores(70, 85, 82, 94);
+console.log(jambScores);
+
+musa.jambScore = jambScores
+console.log(musa)
 //-------------------------------------------------------------------------------------------------------------------
 
 // Question 4:
